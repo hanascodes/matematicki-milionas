@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!--font-->
+        <!-- Izvor fonta: https://fonts.google.com/specimen/JetBrains+Mono?category=Monospace -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap" rel="stylesheet">
+        <!--font-->
+        <title>Matematički Milionaš</title>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Nova igra</a></li>
+                <li><a href="upute.html">Upute</a></li>
+                <li><a href="oprojektu.html">O projektu</a></li>
+            </ul>
+        </nav>
+
+        <form action="" name="yourName" onsubmit="return validateForm()">
+            <label for="name" id="name">Unesi ime:</label>
+            <input type="text" id="name" name="name" placeholder="John">
+            <input type="submit" value="Submit">
+        </form>
+
+        <!--dio koda preuzet sa
+        https://www.webdeveloper.com/d/240252-hide-button-once-clicked/2-->
+        
+        <div class="question-and-answer-container">
+        <!--izvor slike: https://codepen.io/MyXoToD/pen/IDnfk, samo ja editovala u kodu i u gimpu-->
+        <img src="logo.png" alt="" onclick="start()">
+        <div class="question-container">
+            <pre class="question" id="question"></pre>
+            <p id="izraz"></p>
+
+        </div>
+
+        <div class="hide" id="answers">
+            
+                <button type="button" class="answer"  id="answerA"></button> 
+                <button type="button"  class="answer"  id="answerB"></button>
+                <button type="button" class="answer"  id="answerC"></button>
+                <button type="button" class="answer"  id="answerD"></button>
+         
+
+
+
+        </div>
+        <p id="brojBodova"></p>
+        <p id="pobjeda"></p>
+        <p id="brojPitanja"></p>
+    </div>
+
+
+
+
+
+        <script src="index.js" type="text/javascript"></script>
+    </body>
+
+
+
+
+
+
+
+</html>
